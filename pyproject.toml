@@ -1,0 +1,17 @@
+[project]
+name = "punchy"
+version = "0.1.0"
+description = "A from-scratch Claude agent for learning how agents work"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["anthropic"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.scripts]
+punchy = "punchy.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
